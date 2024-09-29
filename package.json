@@ -1,0 +1,52 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "this is for learning expressJS",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "maxConcurrency": 2,
+    "verbose": true,
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ragastra07/Node-ExpressJS.git"
+  },
+  "keywords": [
+    "ExpressJS"
+  ],
+  "author": "Ragastra07",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ragastra07/Node-ExpressJS/issues"
+  },
+  "homepage": "https://github.com/Ragastra07/Node-ExpressJS#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
+    "babel-jest": "^28.1.0",
+    "jest": "^28.1.0"
+  },
+  "dependencies": {
+    "winston": "^3.14.2",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}
