@@ -2,9 +2,10 @@
   "name": "node-express",
   "version": "1.0.0",
   "description": "this is for learning expressJS",
-  "main": "./src/index.js",
+  "main": "./src/hello.js",
   "type": "module",
   "scripts": {
+    "start": "nodemon src/hello.js",
     "test": "jest"
   },
   "jest": {
@@ -47,7 +48,9 @@
     "supertest": "^7.0.0"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "express": "^4.21.0",
+    "nodemon": "^3.1.7",
     "winston": "^3.14.2",
     "winston-daily-rotate-file": "^5.0.0"
   }
